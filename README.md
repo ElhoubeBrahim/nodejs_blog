@@ -1,6 +1,8 @@
 # Node JS Blog
 Simple Blog using node js and express
 
+![screenshot](https://github.com/ElhoubeBrahim/nodejs_blog/blob/master/screenshot.png?raw=true)
+
 ---
 ## Requirements
 
