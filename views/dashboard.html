@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/includes.js"></script>
+  <script>
+    get_header()
+  </script>
+
+  <title>Node JS Blog</title>
+</head>
+
+<body>
+
+  <main class="dashboard">
+    <div class="welcome">
+      <div class="msg"></div>
+      <a href="/add_post">Add New Post</a>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Title</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <script src="/js/functions.js"></script>
+  <script src="/js/script.js"></script>
+  <script>
+    // Get User Name To Say Welcome ^_^
+    let request = new XMLHttpRequest()
+    request.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        let response = JSON.parse(this.responseText)
+        say_welcome(response.user.name)
+      }
+    }
+    request.open('GET', '/api/users/u', true)
+    request.send()
+
+    // Get All Posts
+    get_all_posts('dashboard')
+  </script>
+
+</body>
+
+</html>

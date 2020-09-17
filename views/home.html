@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/includes.js"></script>
+  <script>
+    get_header()
+  </script>
+
+  <title>Node JS Blog</title>
+</head>
+
+<body>
+
+  <main class="home">
+    <div class="intro">
+      <h1>Welcome To My Node JS Blog</h1>
+      <p>
+        Hello! My Name is Elhoube Brahim, a Junior Web Developer, This is My Blog, it's Built with Node JS in The
+        Backend,
+        I Hope That You Enjoys it, Thank You For Visiting ^_^
+      </p>
+    </div>
+    <br>
+    <div class="blog">
+      <div class="posts"></div>
+      <br>
+    </div>
+  </main>
+
+  <script src="/js/functions.js"></script>
+  <script src="/js/script.js"></script>
+  <script>
+    get_all_posts('blog')
+  </script>
+
+</body>
+
+</html>

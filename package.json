@@ -1,0 +1,20 @@
+{
+  "name": "node_blog",
+  "version": "1.0.0",
+  "description": "Simple Blog with node js",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app",
+    "start": "node app"
+  },
+  "author": "Elhoube Brahim",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
+    "express-fileupload": "^1.2.0",
+    "express-session": "^1.17.1",
+    "mysql": "^2.18.1",
+    "sanitize-html": "^1.27.4"
+  }
+}

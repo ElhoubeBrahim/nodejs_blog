@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/includes.js"></script>
+  <script>
+    get_header()
+  </script>
+
+  <title>Node JS Blog</title>
+</head>
+
+<body>
+
+  <form enctype="multipart/form-data" onsubmit="add_new_post(this); return false">
+    <div class="input-gp">
+      <label for="title">Title :</label>
+      <input type="text" name="title" placeholder="Post Title ..." id="title">
+    </div>
+
+    <div class="input-gp">
+      <label for="picture">Picture :</label>
+      <input type="file" name="picture" id="picture">
+    </div>
+
+    <div class="input-gp">
+      <label for="content">Content :</label>
+      <textarea type="text" name="content" placeholder="Post Content ..." id="content"></textarea>
+    </div>
+
+    <button type="submit">Add Post</button>
+  </form>
+
+  <script src="/js/functions.js"></script>
+  <script src="/js/script.js"></script>
+
+</body>
+
+</html>

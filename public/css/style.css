@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+form {
+  width: 60%;
+  margin: 80px auto;
+  border: 1px #ddd solid;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+form .title {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+form .input-gp {
+  text-align: start;
+  margin: 20px 0;
+}
+
+form .input-gp label {
+  margin-inline-start: 5px;
+}
+
+form .input-gp input,
+form .input-gp textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px #ddd solid;
+}
+
+form .input-gp input.invalid,
+form .input-gp textarea.invalid {
+  border: 1px #bd5555 solid;
+}
+
+form .input-gp .error {
+  color: #bd5555;
+  font-size: 1rem;
+  padding: 0 10px;
+}
+
+form .input-gp textarea {
+  resize: vertical;
+  height: 250px;
+}
+
+form button[type=submit] {
+  all: unset;
+  border: 1px #ddd solid;
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  width: 60%;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+form button[type=submit]:hover {
+  background-color: #fff;
+  color: #444;
+}
+
+/* Start Header */
+
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #444;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+header.header nav.nav-links {
+  width: 60%;
+}
+
+header.header nav.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.header nav.nav-links ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+}
+
+header.header nav.nav-links ul li {
+  margin: 0 10px;
+}
+
+header.header nav.nav-links a {
+  transition: .3s all ease-in-out;
+}
+
+header.header nav.nav-links a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+/* End Header */
+
+/* Start Footer */
+
+footer.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  background-color: #444;
+  color: #999;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* End Footer */
+
+/* Start Intro Section */
+
+.home {
+  padding: 0 30px;
+}
+
+.home .intro h1 {
+  text-align: center;
+}
+
+.home .intro p {
+  font-size: 1.3rem;
+  width: 50%;
+  margin: 20px auto;
+  padding: 15px;
+  text-align: center;
+  border: 1px #444 solid;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+/* End Intro Section */
+
+/* Start Post Card */
+
+main.blog {
+  padding: 50px 30px;
+}
+
+.posts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.posts article.post {
+  width: 32%;
+  border: 1px #ddd solid;
+  margin-bottom: 20px;
+}
+
+.posts article.post .picture {
+  height: 200px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.posts article.post .picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.posts article.post .title {
+  padding: 5px 10px;
+}
+
+.posts article.post .title a:hover {
+  text-decoration: underline;
+}
+
+/* End Post Card */
+
+/* Start Dashboard */
+
+.dashboard {
+  padding: 30px;
+}
+
+.dashboard .welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard .welcome .msg {
+  font-size: 1.4rem;
+}
+
+.dashboard .welcome a {
+  display: block;
+  padding: 10px 30px;
+  background-color: green;
+  color: #fff;
+  border-radius: 5px;
+  transition: .3s all ease-in-out;
+}
+
+.dashboard .welcome a:hover {
+  opacity: .8;
+}
+
+.dashboard table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  font-weight: lighter;
+  border: 1px #ddd solid;
+}
+
+.dashboard table thead tr {
+  background-color: #444;
+  color: #fff;
+}
+
+.dashboard table thead tr th {
+  font-weight: lighter;
+  padding: 8px 8px;
+  display: table-cell;
+  text-align: start;
+  vertical-align: top;
+}
+
+.dashboard table tbody tr:not(:last-child) {
+  border-bottom: 1px #ddd solid;
+}
+
+.dashboard table tbody tr td {
+  padding: 8px 8px;
+  display: table-cell;
+  text-align: start;
+  vertical-align: top;
+}
+
+.dashboard table tbody tr td a.edit {
+  color: blue;
+}
+
+.dashboard table tbody tr td a:hover {
+  text-decoration: underline;
+}
+
+.dashboard table form {
+  all: unset;
+}
+
+.dashboard table form button[type=submit] {
+  all: unset;
+  color: red;
+  cursor: pointer;
+}
+
+.dashboard table form button[type=submit]:hover {
+  text-decoration: underline;
+}
+
+/* End Dashboard */
+
+/* Start Single Post */
+
+.single-post {
+  padding: 0 200px;
+}
+
+.single-post .title {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.single-post .picture {
+  height: 400px;
+  margin: 20px 0;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.single-post .picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* End Single Post */
+
+/* Start Errors Page */
+
+.error-page {
+  text-align: center;
+  color: #bd5555;
+  padding: 50px 50px;
+}
+
+.error-page .code {
+  font-size: 7rem;
+  font-weight: bolder;
+}
+
+.error-page .content {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  border: 1px #ddd solid;
+  padding: 5px;
+}
+
+/* End Errors Page */
+
+/* Start Post Card */
+/* End Post Card */
