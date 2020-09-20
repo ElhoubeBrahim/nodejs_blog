@@ -27,3 +27,8 @@ To run the project locate at the project directory on your cmd, then execute the
     $ node app.js
     
 Go to `http://localhost:5000` and enjoy the project
+
+## Admin Login info
+
+- username: admin
+- password: admin
